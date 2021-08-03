@@ -65,14 +65,16 @@
     "uiFramework:start": "grunt uiFramework:start",
     "uiFramework:build": "grunt uiFramework:build",
     "uiFramework:createComponent": "yo ./ui_framework/generator-kui/app/component.js",
-    "uiFramework:documentComponent": "yo ./ui_framework/generator-kui/app/documentation.js"
+    "uiFramework:documentComponent": "yo ./ui_framework/generator-kui/app/documentation.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/elastic/kibana.git"
   },
   "dependencies": {
-    "@elastic/datemath": "2.3.0",
+    "@elastic/datemath": "3.0.0",
     "@elastic/filesaver": "1.1.2",
     "@elastic/numeral": "2.3.1",
     "@elastic/test-subj-selector": "0.2.1",
@@ -167,7 +169,7 @@
     "querystring-browser": "1.0.4",
     "raw-loader": "0.5.1",
     "react": "16.0.0",
-    "react-ace": "5.2.2",
+    "react-ace": "5.3.0",
     "react-addons-test-utils": "15.6.2",
     "react-anything-sortable": "1.7.3",
     "react-color": "2.11.7",
@@ -212,7 +214,8 @@
     "webpack": "3.6.0",
     "webpack-merge": "4.1.0",
     "wreck": "12.4.0",
-    "yauzl": "2.7.0"
+    "yauzl": "2.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@elastic/eslint-config-kibana": "0.14.0",
@@ -304,5 +307,6 @@
   "engines": {
     "node": "6.12.2",
     "npm": "3.10.10"
-  }
+  },
+  "snyk": true
 }
