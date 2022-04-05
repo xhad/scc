@@ -72,7 +72,7 @@
     "url": "https://github.com/elastic/kibana.git"
   },
   "dependencies": {
-    "@elastic/datemath": "2.3.0",
+    "@elastic/datemath": "2.5.0",
     "@elastic/filesaver": "1.1.2",
     "@elastic/numeral": "2.3.1",
     "@elastic/test-subj-selector": "0.2.1",
@@ -153,7 +153,7 @@
     "mathjs": "3.16.2",
     "minimatch": "2.0.10",
     "mkdirp": "0.5.1",
-    "moment": "2.13.0",
+    "moment": "2.29.2",
     "moment-timezone": "0.5.4",
     "ngreact": "0.5.1",
     "no-ui-slider": "1.2.0",
